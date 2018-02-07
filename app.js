@@ -8,8 +8,7 @@ var main = function() {
     var html = template(text); 
       $('.list').append(html); 
       $('#todo').val(""); 
-  
-  return false; 
+        return false; 
   });
   
     $('.list').on('click','.glyphicon-star', function(){
@@ -18,5 +17,6 @@ var main = function() {
     $(this).parent().remove();
   });
   };
+
 
 $(document).ready(main);
